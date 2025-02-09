@@ -10,7 +10,10 @@ export function About() {
       <div className="container px-5 mx-auto">
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
+            <div
+              className="relative w-full h-[400px] rounded-3xl overflow-hidden"
+              data-aos="fade-right"
+            >
               <Image
                 src={about1Img}
                 alt="foto do cachorro"
@@ -21,7 +24,10 @@ export function About() {
               />
             </div>
 
-            <div className="absolute w-40 h-40 right-4 -bottom-8 border-4 overflow-hidden rounded-lg border-white">
+            <div
+              className="absolute w-40 h-40 right-4 -bottom-8 border-4 overflow-hidden rounded-lg border-white"
+              data-aos="fade-up-left"
+            >
               <Image
                 src={about2Img}
                 alt="foto do gato"
@@ -32,9 +38,9 @@ export function About() {
             </div>
           </div>
 
-          <div className="space-y-6 mt-10">
+          <div className="space-y-6 mt-10" data-aos="fade-up-left">
             <h2 className="text-4xl font-bold">Sobre</h2>
-            <p>
+            <p data-aos="fade-up-left">
               Até que alguém ame um animal, parte de sua alma permanece
               adormecida. Acreditamos nisso e acreditamos no acesso fácil a
               coisas que fazem bem à nossa mente, corpo e espírito. Com uma
@@ -43,7 +49,7 @@ export function About() {
             </p>
 
             {/* Lista unificada */}
-            <ul className="space-y-4">
+            <ul className="space-y-4" data-aos="flip-left">
               <li className="flex items-center gap-2">
                 <Check className="text-red-500" />
                 Aberto desde 2004.
@@ -61,7 +67,8 @@ export function About() {
             {/* Botões melhorados */}
             <div className="flex gap-4">
               <a
-                href="#"
+                target="_blank"
+                href={`https://wa.me/5565992832458?text=Olá vim pelo site e gostaria de mais inforções`}
                 className="bg-[#E84C3D] text-white flex items-center justify-center w-fit
                 gap-2 px-4 py-2 border-4 rounded-md transition hover:bg-red-600"
               >
@@ -70,7 +77,8 @@ export function About() {
               </a>
 
               <a
-                href="#"
+                target="_blank"
+                href={`https://www.google.com/maps?q=Cuiabá,+Mato+Grosso,+Brasil`}
                 className="text-black flex items-center justify-center w-fit
                 gap-2 px-4 py-2 border-4 rounded-md transition hover:opacity-100"
               >

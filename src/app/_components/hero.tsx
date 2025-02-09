@@ -21,34 +21,39 @@ export function Hero() {
       <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           <div className=" space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+            <h1
+              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10"
+              data-aos="fade-down"
+            >
               Seu pet merece cuidado, carinho e atenção especial.
             </h1>
-            <p className="lg: text-lg">
+
+            <p className="lg: text-lg" data-aos="fade-up">
               Oferecemos os melhores serviços para garantir o bem-estar e a
               felicidade do seu amigo de quatro patas.
             </p>
 
-            <div>
-              <a
-                href="#"
-                className="bg-green-500 px-2 py-2 rounded-md font-semibold flex items-center
+            <a
+              data-aos="fade-up"
+              data-aos-delay="200"
+              target="_blank"
+              href={`https://wa.me/5565992832458?text=Olá vim pelo site e gostaria de mais inforções`}
+              className="bg-green-500 px-2 py-2 rounded-md font-semibold flex items-center
                 justify-center w-fit gap-2"
-              >
-                <WhatsappLogo className="w-5 h-5" />
-                Contato via whatsApp
-              </a>
-            </div>
+            >
+              <WhatsappLogo className="w-5 h-5" data-aos="fade-left" />
+              Contato via whatsApp
+            </a>
 
             <div className="mt-8">
               <a href="#">
-                <p className="text-sm mb-4">
+                <p className="text-sm mb-4" data-aos="fade-right">
                   <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>{" "}
                   de desconto na primeira compra
                 </p>
 
-                <div className="flex mt-4">
-                  <div className="w-32 hidden lg:block">
+                <div className="flex mt-4" data-aos="fade-right">
+                  <div className="w-32 hidden lg:block" data-aos="fade-up">
                     <Image
                       src={catImg}
                       alt="foto do gato"
@@ -62,8 +67,13 @@ export function Hero() {
           </div>
 
           {/* componente do cachorro */}
-          <div className="hidden md:block h-full relative">
+          <div
+            className="hidden md:block h-full relative"
+            data-aos="fade-down-left"
+          >
             <Image
+              data-aos="fade-up"
+              data-aos-delay="200"
               src={dogImg}
               alt="foto do cachorro"
               className="object-contain"
